@@ -1,0 +1,295 @@
+html, body{
+    scroll-behavior: smooth;
+    padding: 9px;
+
+}
+
+section{
+    padding: 4%;
+}
+
+.fixed-top {
+    position: relative !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.logo-img{
+    height: 67px;
+}
+
+.logo-img-sidebar{
+    height: 67px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color:white!important;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2{
+    color: #333;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    background: -webkit-linear-gradient(#4e11e8, #d20af2, #f15362);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textBox p{
+    color: #333;
+}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #8948ff;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img{
+    max-width: 436px;
+    margin-top: -91px;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 79px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.coin{
+    max-width: 60px;
+}
+
+.circle{
+    position: absolute;
+    top: 54px;
+    left: 0;
+    width: 108%;
+    height: 214%;
+    background: #f5f6f5;
+    clip-path: circle(792px at right 800px);
+    z-index: -1;
+}
+
+@media (max-width:991px){
+    header{
+        padding: 20px;
+    }
+
+    header .logo{
+        max-width: 60px;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    section{
+        padding: 20px 20px 120px;
+    }
+
+    .content{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .content .textBox h2{
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    .content .textBox{
+        max-width: 100%;
+        margin-top: -131px;
+    }
+
+    .content .imgBox{
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .content .imgBox img{
+        max-width: 300px;
+        margin-top: 24px;
+        margin-left: 41px;
+    }
+
+    .thumb li img{
+        max-width: 40px;
+    }
+
+    .thumb{
+        left: 46%;
+        bottom: -311px;
+    }
+
+    .circle{
+        clip-path: circle(400px at center bottom);
+            margin-top: 168px;
+    }
+}
+
+@media (max-width:390px){
+    header{
+        padding: 20px;
+    }
+
+    header .logo{
+        max-width: 60px;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    section{
+        padding: 20px 20px 120px;
+    }
+
+    .content{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .content .textBox h2{
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    .content .textBox{
+        max-width: 100%;
+        margin-top: -131px;
+    }
+
+    .content .imgBox{
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .content .imgBox img{
+        max-width: 300px;
+        margin-top: 24px;
+        margin-left: 41px;
+    }
+
+    .thumb li img{
+        max-width: 40px;
+    }
+
+    .thumb{
+        bottom: -614px;
+        left: 45%;
+    }
+
+    .thumb li {
+        margin: 0 7px;
+    }
+}
+
+.section-2{
+    margin-top: 154px;
+    background-color: #f5f6f5;
+    border-radius: 18px;
+}
+
+.section-4{
+    margin-top: 52px;
+    background-color: #f5f6f5;
+    border-radius: 18px;
+}
+
+
+.catalog{
+    text-align: center;
+}
+
+.recent_img{
+    width: 199px;
+}
+
+.card{
+    border: white !important;
+    background-color: white !important;
+}
+
+.meaning{
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.row{
+    margin-top: 66px !important;
+
+}
+
+.price{
+    text-align: center;
+    font-size: 26px;
+    margin-top: 16px;
+}
+
+.nft_img{
+    width: 199px;
+    border-radius: 120px;
+}
+
+.nft_img { 
+    transition: all .2s ease-in-out; 
+}
+    
+.nft_img:hover { 
+    transform: scale(1.1); 
+}
